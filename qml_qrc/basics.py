@@ -1,4 +1,5 @@
-#!/usr/bin/python
+# coding: utf-8
+# !/usr/bin/python
 
 # Copyright (C) 2010 Nokia Corporation and/or its subsidiary(-ies).
 # All rights reserved.
@@ -40,9 +41,10 @@ from PySide.QtGui import *
 from PySide.QtDeclarative import *
 from resource import qmlqrc
 
-class PieChart (QDeclarativeItem):
 
-    def __init__(self, parent = None):
+class PieChart(QDeclarativeItem):
+
+    def __init__(self, parent=None):
         QDeclarativeItem.__init__(self, parent)
         # need to disable this flag to draw inside a QDeclarativeItem
         self.setFlag(QGraphicsItem.ItemHasNoContents, False)
@@ -69,14 +71,16 @@ class PieChart (QDeclarativeItem):
     color = Property(QColor, getColor, setColor)
     name = Property(unicode, getName, setName)
 
+
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    
-    qmlRegisterType(PieChart, 'Charts', 1, 0, 'PieChart');
+
+    qmlRegisterType(PieChart, 'Charts', 1, 0, 'PieChart')
     view = QDeclarativeView()
-    engine = view.engine()
-    engine.addImportPath("qrc:/")
+    # import path 是qml中用来improt 的路径，类似python sys.path
+    # plugin path 是能读到qmdir的路径
 
     view.setSource("qrc:/qml/app.qml")
+    # setSource支持qrc url路径
     view.show()
     sys.exit(app.exec_())
