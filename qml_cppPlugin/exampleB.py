@@ -16,6 +16,7 @@ if __name__ == '__main__':
     view.setResizeMode(QtQuick.QQuickView.SizeRootObjectToView)
     view.engine().addImportPath(os.path.join(os.path.dirname(__file__), 'imports'))
     view.setSource("qrc:/main2.qml")
+    #注意，qrc中的qml，貌似存在刷新问题,建议直接读取qml文件
     view.show()
 
     sys.exit(app.exec_())
