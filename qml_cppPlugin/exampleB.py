@@ -5,13 +5,17 @@ import os
 from resources import qmlB
 
 if __name__ == '__main__':
-    app = QtWidgets.QApplication(sys.argv[1:])
+    # app = QtWidgets.QApplication(sys.argv[1:])
+    app = QtGui.QGuiApplication(sys.argv[1:])
 
-    engine = QtQml.QQmlApplicationEngine()
-    engine.addImportPath(os.path.join(os.path.dirname(__file__), 'imports'))
     # import path 是qml中用来improt 的路径，类似python sys.path
     # plugin path 是能读到qmdir的路径
 
-    engine.load("qrc:/main2.qml")
+    # root是item 只能用view来启动
+    view = QtQuick.QQuickView()
+    view.setResizeMode(QtQuick.QQuickView.SizeRootObjectToView)
+    view.engine().addImportPath(os.path.join(os.path.dirname(__file__), 'imports'))
+    view.setSource("qrc:/main2.qml")
+    view.show()
 
     sys.exit(app.exec_())
