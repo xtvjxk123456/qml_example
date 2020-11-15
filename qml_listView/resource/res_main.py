@@ -2,7 +2,7 @@
 
 # Resource object code
 #
-# Created: 周日 十一月 15 12:14:14 2020
+# Created: 周日 十一月 15 12:49:58 2020
 #      by: The Resource Compiler for PySide2 (Qt v5.6.1)
 #
 # WARNING! All changes made in this file will be lost!
@@ -10,27 +10,24 @@
 from PySide2 import QtCore
 
 qt_resource_data = b"\
-\x00\x00\x02(\
+\x00\x00\x01\xf8\
 i\
 mport QtQuick 2.\
-0\x0d\x0a\x0d\x0a\x0d\x0aItem {\x0d\x0a \
-   width: 300\x0d\x0a \
-   height: 300\x0d\x0a\
-\x0d\x0a    Component \
-{\x0d\x0a            i\
-d: contactDelega\
-te\x0d\x0a            \
-Rectangle{\x0d\x0a    \
-            widt\
-h: ListView.view\
-.width\x0d\x0a        \
-        color: \x22\
-lightgreen\x22\x0d\x0a\x0d\x0a \
-               T\
-ext{\x0d\x0a          \
-          anchor\
-s.centerIn: pare\
-nt\x0d\x0a            \
+0\x0d\x0a\x0d\x0aItem {\x0d\x0a   \
+ width: 300\x0d\x0a   \
+ height: 300\x0d\x0a\x0d\x0a\
+    Component {\x0d\
+\x0a            id:\
+ contactDelegate\
+\x0d\x0a            Re\
+ctangle{\x0d\x0a      \
+          width:\
+ ListView.view.w\
+idth\x0d\x0a          \
+      color: \x22li\
+ghtgreen\x22\x0d\x0a\x0d\x0a   \
+             Tex\
+t{\x0d\x0a            \
         text: mo\
 delData\x0d\x0a       \
          }\x0d\x0a\x0d\x0a  \

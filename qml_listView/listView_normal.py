@@ -3,6 +3,7 @@
 from PySide2 import QtWidgets, QtCore, QtGui, QtQuick, QtQml
 import sys
 import os
+import pprint
 
 # resource
 from resource import res_main
@@ -10,7 +11,7 @@ from resource import res_main
 
 def debug(statue, view):
     if statue == QtQuick.QQuickView.Error:
-        print view.errors()
+        pprint.pprint(view.errors())
 
 
 if __name__ == "__main__":
