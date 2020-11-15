@@ -2,15 +2,15 @@
 
 # Resource object code
 #
-# Created: 周日 十一月 15 12:49:58 2020
-#      by: The Resource Compiler for PySide2 (Qt v5.6.1)
+# Created: 周日 十一月 15 14:06:14 2020
+#      by: The Resource Compiler for PySide2 (Qt v5.11.2)
 #
 # WARNING! All changes made in this file will be lost!
 
 from PySide2 import QtCore
 
-qt_resource_data = b"\
-\x00\x00\x01\xf8\
+qt_resource_data = "\
+\x00\x00\x01\xbc\
 i\
 mport QtQuick 2.\
 0\x0d\x0a\x0d\x0aItem {\x0d\x0a   \
@@ -19,34 +19,30 @@ mport QtQuick 2.\
     Component {\x0d\
 \x0a            id:\
  contactDelegate\
-\x0d\x0a            Re\
-ctangle{\x0d\x0a      \
-          width:\
- ListView.view.w\
-idth\x0d\x0a          \
-      color: \x22li\
-ghtgreen\x22\x0d\x0a\x0d\x0a   \
-             Tex\
-t{\x0d\x0a            \
-        text: mo\
-delData\x0d\x0a       \
-         }\x0d\x0a\x0d\x0a  \
-          }\x0d\x0a   \
-     }\x0d\x0a\x0d\x0a    Li\
-stView{\x0d\x0a       \
- anchors.fill: p\
-arent\x0d\x0a        a\
-nchors.margins: \
-2\x0d\x0a        model\
-:[\x22fff\x22,\x22aa\x22,\x22cc\
-c\x22]\x0d\x0a        del\
-egate: contactDe\
-legate\x0d\x0a        \
-spacing: 10\x0d\x0a\x0d\x0a \
-   }\x0d\x0a}\
+\x0d\x0a            Te\
+xt{\x0d\x0a           \
+     width: List\
+View.view.width\x0d\
+\x0a               \
+ height: 30\x0d\x0a   \
+             tex\
+t: modelData\x0d\x0a\x0d\x0a\
+\x0d\x0a            }\x0d\
+\x0a        }\x0d\x0a\x0d\x0a  \
+  ListView{\x0d\x0a   \
+     anchors.fil\
+l: parent\x0d\x0a     \
+   anchors.margi\
+ns: 2\x0d\x0a        m\
+odel:[\x22fff\x22,\x22aa\x22\
+,\x22ccc\x22]\x0d\x0a       \
+ delegate: conta\
+ctDelegate\x0d\x0a    \
+    spacing: 10\x0d\
+\x0a\x0d\x0a    }\x0d\x0a}\
 "
 
-qt_resource_name = b"\
+qt_resource_name = "\
 \x00\x03\
 \x00\x00x<\
 \x00q\
@@ -58,7 +54,7 @@ qt_resource_name = b"\
 \x00m\x00l\
 "
 
-qt_resource_struct = b"\
+qt_resource_struct = "\
 \x00\x00\x00\x00\x00\x02\x00\x00\x00\x01\x00\x00\x00\x01\
 \x00\x00\x00\x00\x00\x02\x00\x00\x00\x01\x00\x00\x00\x02\
 \x00\x00\x00\x0c\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\

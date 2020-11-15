@@ -6,13 +6,11 @@ Item {
 
     Component {
             id: contactDelegate
-            Rectangle{
+            Text{
                 width: ListView.view.width
-                color: "lightgreen"
+                height: 30
+                text: modelData
 
-                Text{
-                    text: modelData
-                }
 
             }
         }
