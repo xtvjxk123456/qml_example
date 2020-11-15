@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="qml">
+    <file>listView_normal.qml</file>
+  </qresource>
+</RCC>
