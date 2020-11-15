@@ -2,7 +2,7 @@
 
 # Resource object code
 #
-# Created: 周日 十一月 15 11:33:38 2020
+# Created: 周日 十一月 15 12:14:14 2020
 #      by: The Resource Compiler for PySide2 (Qt v5.6.1)
 #
 # WARNING! All changes made in this file will be lost!
@@ -10,19 +10,43 @@
 from PySide2 import QtCore
 
 qt_resource_data = b"\
-\x00\x00\x00\xa2\
+\x00\x00\x02(\
 i\
 mport QtQuick 2.\
-5\x0d\x0a\x0d\x0aItem{\x0d\x0a    \
-id: main\x0d\x0a    wi\
-dth: 300\x0d\x0a    he\
-ight:300\x0d\x0a\x0d\x0a    \
-ListView{\x0d\x0a     \
-   anchors.fill:\
- main\x0d\x0a        m\
-odel: [\x22100\x22,\x2220\
-0\x22]\x0d\x0a\x0d\x0a    }\x0d\x0a\x0d\x0a\
-}\
+0\x0d\x0a\x0d\x0a\x0d\x0aItem {\x0d\x0a \
+   width: 300\x0d\x0a \
+   height: 300\x0d\x0a\
+\x0d\x0a    Component \
+{\x0d\x0a            i\
+d: contactDelega\
+te\x0d\x0a            \
+Rectangle{\x0d\x0a    \
+            widt\
+h: ListView.view\
+.width\x0d\x0a        \
+        color: \x22\
+lightgreen\x22\x0d\x0a\x0d\x0a \
+               T\
+ext{\x0d\x0a          \
+          anchor\
+s.centerIn: pare\
+nt\x0d\x0a            \
+        text: mo\
+delData\x0d\x0a       \
+         }\x0d\x0a\x0d\x0a  \
+          }\x0d\x0a   \
+     }\x0d\x0a\x0d\x0a    Li\
+stView{\x0d\x0a       \
+ anchors.fill: p\
+arent\x0d\x0a        a\
+nchors.margins: \
+2\x0d\x0a        model\
+:[\x22fff\x22,\x22aa\x22,\x22cc\
+c\x22]\x0d\x0a        del\
+egate: contactDe\
+legate\x0d\x0a        \
+spacing: 10\x0d\x0a\x0d\x0a \
+   }\x0d\x0a}\
 "
 
 qt_resource_name = b"\

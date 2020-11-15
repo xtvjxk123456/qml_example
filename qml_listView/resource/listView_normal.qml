@@ -1,14 +1,30 @@
-import QtQuick 2.5
+import QtQuick 2.0
 
-Item{
-    id: main
+
+Item {
     width: 300
-    height:300
+    height: 300
+
+    Component {
+            id: contactDelegate
+            Rectangle{
+                width: ListView.view.width
+                color: "lightgreen"
+
+                Text{
+                    anchors.centerIn: parent
+                    text: modelData
+                }
+
+            }
+        }
 
     ListView{
-        anchors.fill: main
-        model: ["100","200"]
+        anchors.fill: parent
+        anchors.margins: 2
+        model:["fff","aa","ccc"]
+        delegate: contactDelegate
+        spacing: 10
 
     }
-
 }
