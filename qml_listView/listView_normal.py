@@ -23,10 +23,7 @@ if __name__ == "__main__":
 
     view.statusChanged.connect(lambda x: debug(x, view))
 
-    # --------------
-    res_main.qCleanupResources()
-    # res_main.qInitResources()
-    # ------------------
+
 
     view.setSource("qrc:/qml/listView_normal.qml")
     view.show()
