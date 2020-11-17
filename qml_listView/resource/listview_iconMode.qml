@@ -38,6 +38,7 @@ Item {
             text: name
             width: GridView.view.cellWidth
             height: GridView.view.cellHeight
+            horizontalAlignment: Text.AlignHCenter
             MouseArea{
                 anchors.fill: parent
                 onClicked: {
